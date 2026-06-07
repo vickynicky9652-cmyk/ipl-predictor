@@ -30,7 +30,7 @@ with col2:
     'Kolkata Knight Riders', 'Delhi Capitals', 'Punjab Kings', 
     'Rajasthan Royals', 'Sunrisers Hyderabad', 'Gujarat Titans', 'Lucknow Super Giants'])
     toss_winner = pd.selectbox("Who won the Toss?", [team1, team2])
-    toss_decision = st.selectbox("Select Toss Decision", ["Choose to Bat", "Choose to Bowl"])
+    toss_decision = st.selectbox('Select Toss Decision', ['Choose to Bat', 'Choose to Bowl'])
 
 pd.markdown("---")
 
