@@ -4,7 +4,7 @@ import numpy as np
 # Page Configuration
 pd.set_page_config(page_title="IPL Match Predictor", layout="wide")
 
-pd.markdown("<h1 style='text-align: center; color: #FF4B4B;'>🏏 IPL Match Winner Predictor (Deep Learning Engine)</h1>", unsafe_style_allowed=True)
+pd.markdown("<h1 style='text-align: center; color: #FF4B4B;'>🏏 IPL Match Winner Predictor (Deep Learning Engine)</h1>", unsafe_allow_html=True)
 pd.markdown("---")
 
 # Layout columns
