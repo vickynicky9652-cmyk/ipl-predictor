@@ -11,11 +11,24 @@ pd.markdown("---")
 col1, col2 = pd.columns(2)
 
 with col1:
-    team1 = pd.selectbox("Select Team 1", ["Mumbai Indians", "Chennai Super Kings", "Royal Challengers Bangalore", "Kolkata Knight Riders", "Delhi Capitals"])
-    venue = pd.selectbox("Select Venue / Stadium", ["Wankhede Stadium", "M. Chinnaswamy Stadium", "MA Chidambaram Stadium", "Narendra Modi Stadium"])
+    team1 = pd.selectbox("Select Team 1", [    'Royal Challengers Bengaluru', 'Mumbai Indians', 'Chennai Super Kings', 
+    'Kolkata Knight Riders', 'Delhi Capitals', 'Punjab Kings', 
+        'Rajasthan Royals', 'Sunrisers Hyderabad', 'Gujarat Titans', 'Lucknow Super Giants'])
+    venue = pd.selectbox("Select Venue / Stadium", ['M. Chinnaswamy Stadium, Bengaluru', 'Wankhede Stadium, Mumbai', 
+    'MA Chidambaram Stadium, Chennai', 'Eden Gardens, Kolkata', 
+    'Arun Jaitley Stadium, Delhi', 'Narendra Modi Stadium, Ahmedabad',
+    'Rajiv Gandhi International Stadium, Hyderabad', 'Sawai Mansingh Stadium, Jaipur',
+    'Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow',
+    'Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh (Mullanpur)',
+    'Shaheed Veer Narayan Singh International Cricket Stadium, Raipur',
+    'Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam',
+    'HPCA Stadium, Dharamshala', 'Barsapara Cricket Stadium, Guwahati',
+    'JSCA International Stadium Complex, Ranchi', 'Inderjit Singh Bindra Stadium, Mohali'])
 
 with col2:
-    team2 = pd.selectbox("Select Team 2", ["Chennai Super Kings", "Mumbai Indians", "Royal Challengers Bangalore", "Kolkata Knight Riders", "Delhi Capitals"])
+    team2 = pd.selectbox("Select Team 2", ['Royal Challengers Bengaluru', 'Mumbai Indians', 'Chennai Super Kings', 
+    'Kolkata Knight Riders', 'Delhi Capitals', 'Punjab Kings', 
+    'Rajasthan Royals', 'Sunrisers Hyderabad', 'Gujarat Titans', 'Lucknow Super Giants'])
     toss_winner = pd.selectbox("Who won the Toss?", [team1, team2])
 
 pd.markdown("---")
